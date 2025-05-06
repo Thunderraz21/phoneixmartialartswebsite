@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses - Phoenix Rise Martial Arts</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#E53E3E',secondary:'#1A202C'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Roboto', sans-serif;
+color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Montserrat', sans-serif;
+}
+.hero-section {
+background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 100%), url('https://readdy.ai/api/search-image?query=A%20dynamic%20martial%20arts%20training%20scene%20showing%20multiple%20students%20practicing%20different%20techniques%20simultaneously.%20The%20image%20captures%20the%20energy%20and%20discipline%20of%20martial%20arts%20training%2C%20with%20students%20in%20crisp%20white%20uniforms%20performing%20kicks%2C%20punches%2C%20and%20forms.%20The%20training%20space%20is%20modern%20and%20well-lit%2C%20with%20traditional%20martial%20arts%20elements%20visible%20in%20the%20background.&width=1920&height=1080&seq=24&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+.course-card {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.course-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Header -->
+<header class="bg-white shadow-sm">
+<div class="container mx-auto px-4 py-4 flex justify-between items-center">
+<a href="index.html" class="flex items-center">
+<div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full mr-2">
+<i class="ri-fire-fill text-white ri-lg"></i>
+</div>
+<h1 class="text-2xl font-bold text-gray-900">Phoenix Rise <span class="text-primary">Martial Arts</span></h1>
+</a>
+<nav class="hidden md:flex space-x-8">
+<a href="home.html" class="font-medium text-gray-800 hover:text-primary transition">Home</a>
+<a href="classes.html" class="font-medium text-gray-800 hover:text-primary transition">Classes</a>
+<a href="membership.html" class="font-medium text-gray-800 hover:text-primary transition">Membership</a>
+<a href="courses.html" class="font-medium text-gray-800 hover:text-primary transition">Courses</a>
+<a href="contact.html" class="font-medium text-primary">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<a href="memberships.html" class="hidden md:inline-block px-6 py-2 bg-primary text-white font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">Join Now</a>
+<button class="md:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section w-full h-[400px] flex items-center">
+<div class="container mx-auto px-4">
+<div class="max-w-2xl">
+<h1 class="text-5xl font-extrabold text-white leading-tight mb-4">Martial Arts Courses</h1>
+<p class="text-xl text-gray-100 mb-8">Discover our comprehensive range of martial arts courses designed for all skill levels.</p>
+<a href="#courses" class="inline-block px-8 py-3 bg-primary text-white font-bold !rounded-button hover:bg-red-700 transition whitespace-nowrap">Explore Courses</a>
+</div>
+</div>
+</section>
+<!-- Course Categories -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12">Our Course Categories</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Beginner Courses -->
+<div class="course-card bg-gray-50 rounded-lg p-6">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-user-star-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Beginner Courses</h3>
+<p class="text-gray-700 mb-4">Perfect for those starting their martial arts journey. Learn fundamental techniques and build a strong foundation.</p>
+<ul class="space-y-2 mb-6">
+<li class="flex items-center text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+Basic stances and movements
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+Fundamental techniques
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+Introduction to martial arts philosophy
+</li>
+</ul>
+<a href="#contact" class="inline-block px-6 py-2 bg-primary text-white font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">Learn More</a>
+</div>
+<!-- Intermediate Courses -->
+<div class="course-card bg-gray-50 rounded-lg p-6">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-shield-star-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Intermediate Courses</h3>
+<p class="text-gray-700 mb-4">Advance your skills with more complex techniques and combinations. Develop deeper understanding of martial arts.</p>
+<ul class="space-y-2 mb-6">
+<li class="flex items-center text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+Advanced combinations
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+Sparring techniques
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+Self-defense applications
+</li>
+</ul>
+<a href="#contact" class="inline-block px-6 py-2 bg-primary text-white font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">Learn More</a>
+</div>
+<!-- Advanced Courses -->
+<div class="course-card bg-gray-50 rounded-lg p-6">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-sword-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Advanced Courses</h3>
+<p class="text-gray-700 mb-4">Master advanced techniques and prepare for competitions. Develop leadership skills and teaching abilities.</p>
+<ul class="space-y-2 mb-6">
+<li class="flex items-center text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+Competition preparation
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+Advanced weapon training
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+Teaching methodology
+</li>
+</ul>
+<a href="#contact" class="inline-block px-6 py-2 bg-primary text-white font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">Learn More</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Specific Courses -->
+<section id="courses" class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12">Featured Courses</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Karate Fundamentals -->
+<div class="course-card bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20karate%20student%20in%20white%20gi%20performing%20a%20perfect%20front%20kick%20against%20a%20clean%2C%20minimalist%20background.%20The%20image%20captures%20the%20precision%20and%20form%20of%20traditional%20karate%20technique%2C%20with%20clear%20visibility%20of%20proper%20stance%20and%20execution.&width=600&height=400&seq=25&orientation=landscape" alt="Karate Fundamentals" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Karate Fundamentals</h3>
+<p class="text-gray-700 mb-4">Master the essential techniques of traditional Karate, including stances, strikes, and kata.</p>
+<div class="flex justify-between items-center mb-4">
+<span class="text-gray-600"><i class="ri-time-line mr-2"></i>12 weeks</span>
+<span class="text-gray-600"><i class="ri-group-line mr-2"></i>Max 15 students</span>
+</div>
+<a href="#contact" class="block w-full px-6 py-3 bg-primary text-white text-center font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">Enroll Now</a>
+</div>
+</div>
+<!-- Brazilian Jiu-Jitsu -->
+<div class="course-card bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Two%20BJJ%20practitioners%20in%20blue%20and%20white%20gis%20practicing%20ground%20techniques%20on%20professional%20mats.%20The%20image%20shows%20the%20technical%20aspects%20of%20Brazilian%20Jiu-Jitsu%20training%20with%20clean%2C%20well-lit%20environment%20and%20proper%20form.&width=600&height=400&seq=26&orientation=landscape" alt="Brazilian Jiu-Jitsu" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Brazilian Jiu-Jitsu</h3>
+<p class="text-gray-700 mb-4">Learn the art of ground fighting and submission techniques in this comprehensive BJJ course.</p>
+<div class="flex justify-between items-center mb-4">
+<span class="text-gray-600"><i class="ri-time-line mr-2"></i>16 weeks</span>
+<span class="text-gray-600"><i class="ri-group-line mr-2"></i>Max 12 students</span>
+</div>
+<a href="#contact" class="block w-full px-6 py-3 bg-primary text-white text-center font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">Enroll Now</a>
+</div>
+</div>
+<!-- Muay Thai -->
+<div class="course-card bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20Muay%20Thai%20fighter%20practicing%20powerful%20kicks%20on%20a%20heavy%20bag%20in%20a%20modern%20training%20facility.%20The%20image%20captures%20the%20intensity%20and%20proper%20technique%20of%20Muay%20Thai%20striking%2C%20with%20focus%20on%20form%20and%20power.&width=600&height=400&seq=27&orientation=landscape" alt="Muay Thai" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Muay Thai</h3>
+<p class="text-gray-700 mb-4">Develop striking skills using hands, elbows, knees, and shins in the art of Thai boxing.</p>
+<div class="flex justify-between items-center mb-4">
+<span class="text-gray-600"><i class="ri-time-line mr-2"></i>14 weeks</span>
+<span class="text-gray-600"><i class="ri-group-line mr-2"></i>Max 10 students</span>
+</div>
+<a href="#contact" class="block w-full px-6 py-3 bg-primary text-white text-center font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">Enroll Now</a>
+</div>
+</div>
+<!-- Kids Martial Arts -->
+<div class="course-card bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Children%20in%20martial%20arts%20uniforms%20practicing%20basic%20techniques%20with%20an%20instructor%20in%20a%20bright%2C%20safe%20training%20environment.%20The%20image%20shows%20kids%20engaged%20in%20structured%2C%20fun%20martial%20arts%20activities%20with%20proper%20supervision.&width=600&height=400&seq=28&orientation=landscape" alt="Kids Martial Arts" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Kids Martial Arts</h3>
+<p class="text-gray-700 mb-4">A fun and engaging program designed specifically for children to develop discipline and confidence.</p>
+<div class="flex justify-between items-center mb-4">
+<span class="text-gray-600"><i class="ri-time-line mr-2"></i>10 weeks</span>
+<span class="text-gray-600"><i class="ri-group-line mr-2"></i>Max 12 students</span>
+</div>
+<a href="#contact" class="block w-full px-6 py-3 bg-primary text-white text-center font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">Enroll Now</a>
+</div>
+</div>
+<!-- Self Defense -->
+<div class="course-card bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Students%20practicing%20practical%20self-defense%20techniques%20in%20pairs%2C%20demonstrating%20realistic%20scenarios%20in%20a%20professional%20training%20environment.%20The%20image%20shows%20proper%20form%20and%20control%20in%20self-defense%20applications.&width=600&height=400&seq=29&orientation=landscape" alt="Self Defense" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Self Defense</h3>
+<p class="text-gray-700 mb-4">Learn practical self-defense techniques and develop situational awareness for real-world scenarios.</p>
+<div class="flex justify-between items-center mb-4">
+<span class="text-gray-600"><i class="ri-time-line mr-2"></i>8 weeks</span>
+<span class="text-gray-600"><i class="ri-group-line mr-2"></i>Max 15 students</span>
+</div>
+<a href="#contact" class="block w-full px-6 py-3 bg-primary text-white text-center font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">Enroll Now</a>
+</div>
+</div>
+<!-- Competition Training -->
+<div class="course-card bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Advanced%20martial%20artists%20training%20intensively%20for%20competition%2C%20showing%20sparring%20and%20conditioning%20exercises%20in%20a%20professional%20training%20facility.%20The%20image%20captures%20the%20intensity%20and%20focus%20of%20competition%20preparation.&width=600&height=400&seq=30&orientation=landscape" alt="Competition Training" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Competition Training</h3>
+<p class="text-gray-700 mb-4">Intensive training program for students preparing to compete in martial arts tournaments.</p>
+<div class="flex justify-between items-center mb-4">
+<span class="text-gray-600"><i class="ri-time-line mr-2"></i>16 weeks</span>
+<span class="text-gray-600"><i class="ri-group-line mr-2"></i>Max 8 students</span>
+</div>
+<a href="#contact" class="block w-full px-6 py-3 bg-primary text-white text-center font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">Enroll Now</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-3xl font-bold text-center mb-12">Enroll in a Course</h2>
+<div class="bg-gray-50 rounded-lg shadow-md p-8">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="md:col-span-2">
+<h3 class="text-xl font-bold mb-4">Course Enrollment Form</h3>
+</div>
+<div>
+<label class="block text-gray-700 mb-2" for="firstName">First Name</label>
+<input type="text" id="firstName" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" required>
+</div>
+<div>
+<label class="block text-gray-700 mb-2" for="lastName">Last Name</label>
+<input type="text" id="lastName" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" required>
+</div>
+<div>
+<label class="block text-gray-700 mb-2" for="email">Email</label>
+<input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" required>
+</div>
+<div>
+<label class="block text-gray-700 mb-2" for="phone">Phone</label>
+<input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" required>
+</div>
+<div class="md:col-span-2">
+<label class="block text-gray-700 mb-2" for="course">Selected Course</label>
+<select id="course" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" required>
+<option value="">Select a course</option>
+<option value="karate">Karate Fundamentals</option>
+<option value="bjj">Brazilian Jiu-Jitsu</option>
+<option value="muaythai">Muay Thai</option>
+<option value="kids">Kids Martial Arts</option>
+<option value="selfdefense">Self Defense</option>
+<option value="competition">Competition Training</option>
+</select>
+</div>
+<div class="md:col-span-2">
+<label class="block text-gray-700 mb-2" for="experience">Previous Martial Arts Experience</label>
+<textarea id="experience" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary"></textarea>
+</div>
+<div class="md:col-span-2">
+<button type="submit" class="w-full px-6 py-3 bg-primary text-white font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">Submit Enrollment</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-12 pb-6">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+<div>
+<div class="flex items-center mb-4">
+<div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full mr-2">
+<i class="ri-fire-fill text-white ri-lg"></i>
+</div>
+<h3 class="text-xl font-bold">Phoenix Rise</h3>
+</div>
+<p class="text-gray-400 mb-4">Transforming lives through martial arts training, discipline, and community since 2010.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+<i class="ri-facebook-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+<i class="ri-instagram-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+<i class="ri-twitter-x-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+<i class="ri-youtube-fill text-white"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+<li><a href="classes.html" class="text-gray-400 hover:text-white transition">Classes</a></li>
+<li><a href="membership.html" class="text-gray-400 hover:text-white transition">Membership</a></li>
+<li><a href="courses.html" class="text-gray-400 hover:text-white transition">Courses</a></li>
+<li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Contact Info</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-map-pin-line"></i>
+</div>
+<span class="text-gray-400">123 Martial Arts Way<br>Phoenix, AZ 85001</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-phone-line"></i>
+</div>
+<span class="text-gray-400">(555) 123-4567</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-mail-line"></i>
+</div>
+<span class="text-gray-400">info@phoenixrise.com</span>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Hours</h4>
+<ul class="space-y-2">
+<li class="text-gray-400">Monday - Friday: 6am - 9pm</li>
+<li class="text-gray-400">Saturday: 8am - 6pm</li>
+<li class="text-gray-400">Sunday: 9am - 4pm</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-6">
+<p class="text-center text-gray-400">&copy; 2024 Phoenix Rise Martial Arts. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body>
+</html>

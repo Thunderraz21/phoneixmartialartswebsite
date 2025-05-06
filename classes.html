@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Classes - Phoenix Rise Martial Arts</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#E53E3E',secondary:'#1A202C'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Roboto', sans-serif;
+color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Montserrat', sans-serif;
+}
+.hero-section {
+background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 100%), url('https://readdy.ai/api/search-image?query=A%20panoramic%20view%20of%20a%20modern%20martial%20arts%20training%20facility%20with%20multiple%20training%20areas%20visible.%20Students%20are%20practicing%20different%20martial%20arts%20simultaneously%20-%20karate%20in%20one%20area%2C%20jiu-jitsu%20on%20mats%20in%20another%2C%20and%20Muay%20Thai%20at%20punching%20bags.%20The%20space%20is%20well-lit%20with%20professional%20equipment%20and%20mirrors.%20The%20atmosphere%20captures%20the%20diversity%20and%20energy%20of%20martial%20arts%20training.&width=1920&height=1080&seq=12&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+.class-card {
+transition: transform 0.3s ease;
+}
+.class-card:hover {
+transform: translateY(-5px);
+}
+.instructor-card {
+transition: transform 0.3s ease;
+}
+.instructor-card:hover {
+transform: translateY(-5px);
+}
+</style>
+</head>
+<body class="bg-gray-50">
+
+<!-- Header -->
+<header class="bg-white shadow-sm">
+<div class="container mx-auto px-4 py-4 flex justify-between items-center">
+<a href="index.html" class="flex items-center">
+<div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full mr-2">
+<i class="ri-fire-fill text-white ri-lg"></i>
+</div>
+<h1 class="text-2xl font-bold text-gray-900">Phoenix Rise <span class="text-primary">Martial Arts</span></h1>
+</a>
+<nav class="hidden md:flex space-x-8">
+<a href="home.html" class="font-medium text-gray-800 hover:text-primary transition">Home</a>
+<a href="classes.html" class="font-medium text-primary">Classes</a>
+<a href="memberships.html" class="font-medium text-gray-800 hover:text-primary transition">Membership</a>
+<a href="courses.html" class="font-medium text-gray-800 hover:text-primary transition">Courses</a>
+<a href="contact.html" class="font-medium text-gray-800 hover:text-primary transition">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<a href="memberships.html" class="hidden md:inline-block px-6 py-2 bg-primary text-white font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">Join Now</a>
+<button class="md:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-section w-full h-[400px] flex items-center">
+<div class="container mx-auto px-4">
+<div class="max-w-2xl">
+<h1 class="text-5xl font-extrabold text-white leading-tight mb-4">Our Martial Arts Classes</h1>
+<p class="text-xl text-gray-100 mb-8">Discover a wide range of martial arts disciplines taught by expert instructors in a supportive environment.</p>
+</div>
+</div>
+</section>
+
+<!-- Classes Overview -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Karate Class -->
+<div class="class-card bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20traditional%20karate%20class%20in%20session%20with%20students%20in%20white%20gis%20performing%20kata.%20The%20instructor%20is%20demonstrating%20precise%20karate%20techniques.%20The%20dojo%20has%20traditional%20elements%20with%20clean%20mats%20and%20mirrors.%20Students%20are%20lined%20up%20in%20organized%20rows%2C%20showing%20discipline%20and%20focus%20in%20their%20practice.&width=400&height=250&seq=13&orientation=landscape" alt="Karate Class" class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Shotokan Karate</h3>
+<p class="text-gray-700 mb-4">Traditional Japanese martial art focusing on striking techniques, kata, and self-defense applications.</p>
+<div class="mb-4">
+<div class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-user-star-line"></i>
+</div>
+<span class="text-gray-700">All skill levels welcome</span>
+</div>
+<div class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-time-line"></i>
+</div>
+<span class="text-gray-700">60-90 minute classes</span>
+</div>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-group-line"></i>
+</div>
+<span class="text-gray-700">Adult & Youth programs</span>
+</div>
+</div>
+<a href="index.html#schedule" class="inline-block px-6 py-2 bg-primary text-white font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">View Schedule</a>
+</div>
+</div>
+
+<!-- Brazilian Jiu-Jitsu Class -->
+<div class="class-card bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20Brazilian%20Jiu-Jitsu%20training%20session%20with%20students%20in%20gis%20practicing%20ground%20techniques.%20Partners%20are%20working%20on%20grappling%20moves%20on%20blue%20mats.%20The%20training%20area%20is%20modern%20and%20clean%20with%20good%20lighting.%20The%20scene%20shows%20both%20instruction%20and%20supervised%20practice%20of%20BJJ%20techniques.&width=400&height=250&seq=14&orientation=landscape" alt="Brazilian Jiu-Jitsu Class" class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Brazilian Jiu-Jitsu</h3>
+<p class="text-gray-700 mb-4">Ground-based martial art focusing on grappling, submissions, and effective self-defense techniques.</p>
+<div class="mb-4">
+<div class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-user-star-line"></i>
+</div>
+<span class="text-gray-700">Beginner to advanced</span>
+</div>
+<div class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-time-line"></i>
+</div>
+<span class="text-gray-700">90 minute classes</span>
+</div>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-group-line"></i>
+</div>
+<span class="text-gray-700">Gi & No-Gi training</span>
+</div>
+</div>
+<a href="index.html#schedule" class="inline-block px-6 py-2 bg-primary text-white font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">View Schedule</a>
+</div>
+</div>
+
+<!-- Muay Thai Class -->
+<div class="class-card bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20Muay%20Thai%20training%20session%20with%20students%20practicing%20kicks%20on%20heavy%20bags.%20The%20gym%20has%20multiple%20punching%20bags%20and%20training%20equipment.%20Students%20are%20wearing%20traditional%20Muay%20Thai%20shorts%20and%20gear.%20The%20atmosphere%20is%20energetic%20with%20trainers%20providing%20hands-on%20instruction.&width=400&height=250&seq=15&orientation=landscape" alt="Muay Thai Class" class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Muay Thai</h3>
+<p class="text-gray-700 mb-4">Thai boxing incorporating strikes with fists, elbows, knees, and shins for a complete striking art.</p>
+<div class="mb-4">
+<div class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-user-star-line"></i>
+</div>
+<span class="text-gray-700">All fitness levels</span>
+</div>
+<div class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-time-line"></i>
+</div>
+<span class="text-gray-700">60 minute classes</span>
+</div>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-group-line"></i>
+</div>
+<span class="text-gray-700">Technical & conditioning</span>
+</div>
+</div>
+<a href="index.html#schedule" class="inline-block px-6 py-2 bg-primary text-white font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">View Schedule</a>
+</div>
+</div>
+
+<!-- Judo Class -->
+<div class="class-card bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20judo%20class%20with%20students%20practicing%20throws%20on%20proper%20judo%20mats.%20The%20scene%20shows%20both%20standing%20techniques%20and%20ground%20work.%20Students%20are%20wearing%20white%20judo%20gis%20with%20colored%20belts.%20The%20training%20space%20is%20professional%20with%20good%20lighting%20and%20safety%20equipment.&width=400&height=250&seq=16&orientation=landscape" alt="Judo Class" class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Judo</h3>
+<p class="text-gray-700 mb-4">Olympic sport focusing on throws, pins, and submissions with emphasis on maximum efficiency.</p>
+<div class="mb-4">
+<div class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-user-star-line"></i>
+</div>
+<span class="text-gray-700">Structured progression</span>
+</div>
+<div class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-time-line"></i>
+</div>
+<span class="text-gray-700">75 minute classes</span>
+</div>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-group-line"></i>
+</div>
+<span class="text-gray-700">Competition training</span>
+</div>
+</div>
+<a href="index.html#schedule" class="inline-block px-6 py-2 bg-primary text-white font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">View Schedule</a>
+</div>
+</div>
+
+<!-- Self Defense Class -->
+<div class="class-card bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20self-defense%20class%20with%20students%20practicing%20realistic%20defense%20scenarios.%20The%20training%20area%20is%20modern%20with%20safety%20mats.%20Students%20are%20wearing%20casual%20training%20clothes.%20The%20instructor%20is%20demonstrating%20practical%20self-defense%20techniques%20with%20clear%20explanation.&width=400&height=250&seq=17&orientation=landscape" alt="Self Defense Class" class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Self Defense</h3>
+<p class="text-gray-700 mb-4">Practical self-defense training combining multiple martial arts techniques for real-world situations.</p>
+<div class="mb-4">
+<div class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-user-star-line"></i>
+</div>
+<span class="text-gray-700">No experience needed</span>
+</div>
+<div class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-time-line"></i>
+</div>
+<span class="text-gray-700">60 minute classes</span>
+</div>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-group-line"></i>
+</div>
+<span class="text-gray-700">Scenario training</span>
+</div>
+</div>
+<a href="index.html#schedule" class="inline-block px-6 py-2 bg-primary text-white font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">View Schedule</a>
+</div>
+</div>
+
+<!-- Fitness Training -->
+<div class="class-card bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20martial%20arts%20specific%20fitness%20class%20with%20students%20doing%20conditioning%20exercises.%20The%20gym%20has%20functional%20training%20equipment%2C%20weights%2C%20and%20cardio%20machines.%20Students%20are%20engaged%20in%20high-intensity%20training%20with%20proper%20form.%20The%20space%20is%20well-equipped%20with%20modern%20fitness%20gear.&width=400&height=250&seq=18&orientation=landscape" alt="Fitness Training" class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Martial Arts Fitness</h3>
+<p class="text-gray-700 mb-4">High-intensity conditioning classes designed specifically for martial artists of all levels.</p>
+<div class="mb-4">
+<div class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-user-star-line"></i>
+</div>
+<span class="text-gray-700">All fitness levels</span>
+</div>
+<div class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-time-line"></i>
+</div>
+<span class="text-gray-700">45 minute classes</span>
+</div>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-group-line"></i>
+</div>
+<span class="text-gray-700">Strength & conditioning</span>
+</div>
+</div>
+<a href="index.html#schedule" class="inline-block px-6 py-2 bg-primary text-white font-medium !rounded-button hover:bg-red-700 transition whitespace-nowrap">View Schedule</a>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Instructors Section -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold mb-12 text-center">Our Expert Instructors</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Instructor 1 -->
+<div class="instructor-card bg-gray-50 rounded-lg overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20a%20male%20martial%20arts%20instructor%20in%20his%2040s%20with%20short%20black%20hair%20and%20a%20confident%20expression.%20He%20is%20wearing%20a%20black%20karate%20gi%20with%20a%20black%20belt.%20The%20image%20shows%20his%20experienced%20and%20disciplined%20demeanor%20with%20a%20neutral%20background.&width=300&height=300&seq=19&orientation=squarish" alt="Sensei David Chen" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-1">Sensei David Chen</h3>
+<p class="text-primary mb-2">Karate Chief Instructor</p>
+<p class="text-gray-700 text-sm mb-4">6th Dan Black Belt with over 20 years of teaching experience. Former national champion and certified instructor.</p>
+<div class="flex space-x-2">
+<span class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Karate</span>
+<span class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Self Defense</span>
+</div>
+</div>
+</div>
+
+<!-- Instructor 2 -->
+<div class="instructor-card bg-gray-50 rounded-lg overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20a%20male%20martial%20arts%20instructor%20in%20his%2030s%20with%20athletic%20build%20wearing%20a%20blue%20BJJ%20gi.%20He%20has%20a%20friendly%20yet%20professional%20expression.%20The%20image%20shows%20his%20expertise%20and%20approachability%20with%20a%20clean%20background.&width=300&height=300&seq=20&orientation=squarish" alt="Professor Marcus Silva" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-1">Professor Marcus Silva</h3>
+<p class="text-primary mb-2">BJJ Head Coach</p>
+<p class="text-gray-700 text-sm mb-4">Black Belt in Brazilian Jiu-Jitsu with extensive competition experience. IBJJF certified instructor.</p>
+<div class="flex space-x-2">
+<span class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">BJJ</span>
+<span class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Grappling</span>
+</div>
+</div>
+</div>
+
+<!-- Instructor 3 -->
+<div class="instructor-card bg-gray-50 rounded-lg overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20a%20male%20martial%20arts%20instructor%20in%20his%2030s%20with%20muscular%20build%20wearing%20traditional%20Muay%20Thai%20attire.%20He%20has%20an%20intense%20yet%20approachable%20expression.%20The%20image%20shows%20his%20expertise%20in%20striking%20arts%20with%20a%20clean%20background.&width=300&height=300&seq=21&orientation=squarish" alt="Kru Michael Thompson" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-1">Kru Michael Thompson</h3>
+<p class="text-primary mb-2">Muay Thai Head Coach</p>
+<p class="text-gray-700 text-sm mb-4">Former professional fighter with 15 years of training experience in Thailand. Certified Muay Thai instructor.</p>
+<div class="flex space-x-2">
+<span class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Muay Thai</span>
+<span class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Boxing</span>
+</div>
+</div>
+</div>
+
+<!-- Instructor 4 -->
+<div class="instructor-card bg-gray-50 rounded-lg overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20a%20female%20martial%20arts%20instructor%20in%20her%2030s%20wearing%20a%20white%20judo%20gi%20with%20black%20belt.%20She%20has%20a%20strong%2C%20confident%20expression.%20The%20image%20shows%20her%20expertise%20and%20professionalism%20with%20a%20clean%20background.&width=300&height=300&seq=22&orientation=squarish" alt="Sensei Sarah Williams" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-1">Sensei Sarah Williams</h3>
+<p class="text-primary mb-2">Judo Head Coach</p>
+<p class="text-gray-700 text-sm mb-4">Olympic team member and national champion. IJF certified coach with focus on competition training.</p>
+<div class="flex space-x-2">
+<span class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Judo</span>
+<span class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Olympic Sport</span>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Class Levels Section -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold mb-12 text-center">Class Levels & Programs</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Beginners -->
+<div class="bg-white rounded-lg shadow-md p-6">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-seedling-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Beginners Program</h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Fundamentals of each martial art</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Basic techniques and principles</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Safety and etiquette</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Structured learning path</span>
+</li>
+</ul>
+</div>
+
+<!-- Intermediate -->
+<div class="bg-white rounded-lg shadow-md p-6">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-sword-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Intermediate Program</h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Advanced techniques</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Sparring and application</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Competition preparation</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Technical refinement</span>
+</li>
+</ul>
+</div>
+
+<!-- Advanced -->
+<div class="bg-white rounded-lg shadow-md p-6">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-trophy-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Advanced Program</h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Expert-level techniques</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Competition team training</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Leadership development</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Teaching opportunities</span>
+</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-16 bg-primary">
+<div class="container mx-auto px-4 text-center">
+<h2 class="text-3xl font-bold text-white mb-4">Ready to Begin Your Martial Arts Journey?</h2>
+<p class="text-gray-100 mb-8 max-w-2xl mx-auto">Join our community of dedicated martial artists and start your transformation today.</p>
+<div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+<a href="index.html#trial" class="px-8 py-3 bg-white text-primary font-bold !rounded-button hover:bg-gray-100 transition whitespace-nowrap">Start Free Trial</a>
+<a href="index.html#contact" class="px-8 py-3 border-2 border-white text-white font-bold !rounded-button hover:bg-white hover:text-primary transition whitespace-nowrap">Contact Us</a>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-12 pb-6">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+<div>
+<div class="flex items-center mb-4">
+<div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full mr-2">
+<i class="ri-fire-fill text-white ri-lg"></i>
+</div>
+<h3 class="text-xl font-bold">Phoenix Rise</h3>
+</div>
+<p class="text-gray-400 mb-4">Transforming lives through martial arts training, discipline, and community since 2010.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+<i class="ri-facebook-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+<i class="ri-instagram-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+<i class="ri-twitter-x-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+<i class="ri-youtube-fill text-white"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font- 
+
+bold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition">Classes</a></li>
+<li><a href="index.html#schedule" class="text-gray-400 hover:text-white transition">Schedule</a></li>
+<li><a href="index.html#membership" class="text-gray-400 hover:text-white transition">Membership</a></li>
+<li><a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Contact Info</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-map-pin-line"></i>
+</div>
+<span class="text-gray-400">123 Martial Arts Way<br>Phoenix, AZ 85001</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-phone-line"></i>
+</div>
+<span class="text-gray-400">(555) 123-4567</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-mail-line"></i>
+</div>
+<span class="text-gray-400">info@phoenixrise.com</span>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Hours</h4>
+<ul class="space-y-2">
+<li class="text-gray-400">Monday - Friday: 6am - 9pm</li>
+<li class="text-gray-400">Saturday: 8am - 6pm</li>
+<li class="text-gray-400">Sunday: 9am - 4pm</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-6">
+<p class="text-center text-gray-400">&copy; 2024 Phoenix Rise Martial Arts. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
